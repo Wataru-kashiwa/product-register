@@ -27,7 +27,7 @@ services:
       - db
 
   db:
-    image: postgres
+    image: postgres:15-bullseye
     environment:
       - 'POSTGRES_HOST_AUTH_METHOD=trust'
       - 'POSTGRES_USER=postgres'
